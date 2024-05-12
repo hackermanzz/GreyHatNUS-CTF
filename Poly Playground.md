@@ -7,11 +7,11 @@ Poly playground is a straight-forward challenge that presents players with roots
 2. Submit your answer as coefficients of your polynomial.
 3. First coefficient should always be of the highest order. (Always 1)
 
-![[Pasted image 20240512110652.png]]
+![1](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/b0fd7c41-c3e6-4efe-af03-10da8558b034)
 
 The first few questions are simple as the resulting equations are easy to calculate by hand. But the game continues it presents the player with 3 roots or more. Futhermore, the time given to solve each question gets lesser and lesser, this means we have no choice but to script our answer
 
-![[Pasted image 20240512111222.png]]
+![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/cc11cfe8-0899-437e-98a2-8f457382613d)
 
 ### Solution
 
@@ -120,7 +120,8 @@ if __name__ == "__main__":
 
 As the script continues to run, we can see that it was the right choice to script our answer rather than manually calculate them. There were a total of 100 questions?! Phew... lucky us, found the flag! 
 
-![[Pasted image 20240512113446.png]]
+![3](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/ceb6de79-d4e1-4fb9-bd13-a04299404be7)
+
 
 ### Learning Points
 
