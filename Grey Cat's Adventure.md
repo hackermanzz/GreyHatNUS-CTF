@@ -19,15 +19,18 @@ The starting value of the game will be `180000`. With every second the value wil
 
 We can utilize the `speedhack` function of cheat engine to drastically speed up the count down, however... it does still take a bit of time so grab a coffee! or pull up a game to enjoy while the game counts down.
 
-![[Pasted image 20240512123008.png]]
+![Pasted image 20240512123008](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/9c66ecfd-a606-45eb-a504-37e4741bcd9d)
+
 
 I came back after 2 hours to this :<. 
 
-![[Pasted image 20240512133219.png]]
+![Pasted image 20240512133219](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/707bc3b9-24f9-427e-a6ac-64fe9985b468)
+
 
 After 10-20 minutes the count down finally completes and we can grab the flag :D.
 
-![[Pasted image 20240512133232.png]]
+![Pasted image 20240512133232](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/456f5274-83c4-445b-9705-9836677cc3fa)
+
 
 ```
 GREY{D1D_Y0U_R34LLY_W4IT_F1FTY_H0UR5???:THINKING:}
