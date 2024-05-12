@@ -12,11 +12,30 @@ This write-up will be beginner friendly. This is because, it was also my first t
 
 ![timelock](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/67230c41-1440-4d78-915e-8e36567d391a)
 
+
 The starting value of the game will be `180000`. With every second the value will decrement by 1. However, players will be quick to realize the counting will pause if the game is out of focus. Furthermore, the game itself warns players that the counter will reset if they left that screen.
 
 ### Solution
 
+We can utilize the `speedhack` function of cheat engine to drastically speed up the count down, however... it does still take a bit of time so grab a coffee! or pull up a game to enjoy while the game counts down.
 
+![[Pasted image 20240512123008.png]]
+
+I came back after 2 hours to this :<. 
+
+![[Pasted image 20240512133219.png]]
+
+After 10-20 minutes the count down finally completes and we can grab the flag :D.
+
+![[Pasted image 20240512133232.png]]
+
+```
+GREY{D1D_Y0U_R34LLY_W4IT_F1FTY_H0UR5???:THINKING:}
+```
+
+### Learning points
+
+This challenge familiarizes the players on the different features that cheat engine provides, namely `SpeedHack`. By enabling `speedhack` we effectively speed up the in-game timer such that we are able to achieve the flag 2 hours rather than 50 hours. Phew, the CTF would have ended by then.
 
 # Vault
 
