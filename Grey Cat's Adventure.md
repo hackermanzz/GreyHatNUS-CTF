@@ -1,4 +1,4 @@
-These challenges requires players to utilize a wide range of techniques to capture the flags. Firstly, players need to understand the basics of cheat engine and how to modify arbitrary values to bypass certain requirements in the game. Players are also required to think out of the box for some challenges that may seem impossible.
+![8](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/65dfc3ee-e531-4a0a-ad7a-a5d9a5103758)![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/02b1a312-a10a-41df-8bde-d0414351f39e)These challenges requires players to utilize a wide range of techniques to capture the flags. Firstly, players need to understand the basics of cheat engine and how to modify arbitrary values to bypass certain requirements in the game. Players are also required to think out of the box for some challenges that may seem impossible.
 
 This write-up will be beginner friendly. This is because, it was also my first time using cheat-engine and had to learn everything on the go :).
 
@@ -64,91 +64,94 @@ Hopefully, they found out what the numbers meant...
 
 This challenge introduces the `flappy cat` game. The achievement's description requires us to get a high score of exactly 1337420, nice. 
 
-![[Pasted image 20240504214155.png]]
+![1](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/0a64dbb3-7040-47af-9cb7-68c1433f5a98)
 
 Since our high score starts from 0, if we were to conduct a new scan for `0` we would have too many values to look through and it'd be impossible to find the address that correlates to the high score.
 
 However, we can use the `next scan` method to keep track of changing values. We can start with a scan for the value `0` since our high score is currently `0`.
 
-![[Pasted image 20240504220555.png]]
- 
+![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/3b3cb8d7-26bf-4138-bdc6-366b023e98b9)
+
  Cheat engine retrieved 82,000,000 million possible addresses that could hold our high score. We can lower the number of possible addresses by utilizing the `Next Scan` feature from cheat engine.
 
-![[Pasted image 20240504220548.png]]
+![3](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/a6d98255-8e58-47c4-8819-21111685da5b)
 
 For our next value lets get a highscore of `1` and scan for the exact value `1`. This should narrow down the number of addresses significantly. Right now I have narrowed it down to roughly 47 thousand possible addresses. That is still a large amount of manually sift through. 
 
-![[Pasted image 20240504220625.png]]
+![4](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/48c0cb8e-659a-49e6-875f-526f274647a6)
 
 Lets continue to update our highscore to `2` and run another scan for the exact value `2`. This should considerably reduce the amount of possible addresses. 
 
-![[Pasted image 20240504220822.png]]
+![5](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/cc100815-e55e-46f7-b126-1df4177fdce5)
 
 Using the same method, I was able to pinpoint the exact address required that holds the value for the game's high score. This took me considerably longer as I was struggling to increase my high score lol; It's much harder than it looks!
 
-![[Pasted image 20240504221051.png]]
+![6](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/415003c8-f333-4e17-8e25-6443157158d6)
 
 In our cheat engine menu, we can change the value that the address holds by double clicking on it and entering a different integer value. In this case, the achievement requested for exactly `1337420` (nice).
 
-![[Pasted image 20240504221129.png]]
+![7](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/8cc10ae8-f6d6-4325-8c84-66e72341a45a)
+
 
 The update should reflect accordingly once we focus back into the application (I actually played the game for this high score, source: trust me bro).
 
-![[Pasted image 20240504221139.png]]
+![8](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/cdc3aaef-8aa0-4bb9-a8d7-8578917737f2)
+
 
 We can then collect our flag in the achievements screen. Nice job gamers :D. 
 
-![[Pasted image 20240504221148.png]]
+![9](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/c1fd8977-f3a1-40ef-9430-384de0fb4d0c)
+
 
 # Achievement 2
 
 Achievement 2 require us to purchase all items in the shop for the flag to be unlocked. 
 
-![[Pasted image 20240504172837.png]]
+![1](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/266d477b-b988-45d2-89f3-d4ec43d52baa)
+
 
 However, when browsing the shop for the first time we meet a vagabond-looking cat with a purple hoodie on select various trinkets and potions. These items increase in value exponentially and the last time even has a requirement to purchase all other products before unlocking it.
+![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/ba186e2f-f602-4219-9f17-92b41efede8c)
 
-![[Pasted image 20240504172909.png]]
 
 We can earn coins through the `flappy cat` minigame. To earn coins we have to navigate our kitty through openings in the pipes, each successful point awards us 10 coins! Personally my high score is `1337420` :).
+![3](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/bf1ba354-717d-47f2-b375-7d40b938df95)
 
-![[Pasted image 20240504172925.png]]
 
 Now that we have earned some coins, we are able to afford some of the trinkets in the shop. It would take too much time to manually earn the coins to purchase everything. So lets use cheat engine to change that.
+![4](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/37893b19-445d-4936-91d9-b659dee8e32c)
 
-![[Pasted image 20240504173310.png]]
 
 After firing up cheat engine and selecting the game's process to open. We can conduct an initial scan for the current amount of coins that we have: `620`. Setting the value type to `float` and scanning for the exact value of `620`, we are able to discover 2 addresses that contain those values.
+![5](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/67f088dc-6e1d-40be-a1e2-88fcc1a80383)
 
-![[Pasted image 20240504173244.png]]
 
 Double clicking on each entry allows us to change their values. As an example lets change the address `1B9E29668C0` value to `10000`. To do this, double click on the value column and enter the desired value into the pop-up input field. Press `ok` to execute the update.
+![6](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/8d77f7bb-0f56-4ac2-9561-523e0f686806)
 
-![[Pasted image 20240504173437.png]]
 
 Our coins will not change immediately and will require a revisit. By clicking `back` and re-entering the shop we can see our updated coins value. Now we have 10000 coins! 
 
 However, 10000 is just enough to purchase the almighty powerful fire-cat crystal (yellow orb). Hence, we need more!!!
+![7](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/95c81392-121f-4c40-9d85-b8ae656172e8)
 
-![[Pasted image 20240504173456.png]]
 
 Hopping back to Cheat engine, lets add more funds to our coin pouch. We will be using an extremely large number just for good measures in case the last item is exorbitantly expensive.
+![8](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/afff7acb-ec53-4404-9e56-fb691f5bc0bc)
 
-![[Pasted image 20240504173529.png]]
 
 Boom! We're rich enough to afford the entire shop. I think vagabond cat would be very happy because of us. 
+![9](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/dd202111-0226-4760-a957-4110ffb4354a)
+![10](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/e4e1e2bb-02d5-48ac-b0fc-c1dbb92acc61)
 
-![[Pasted image 20240504173538.png]]
-
-![[Pasted image 20240504173557.png]]
 
 After buying out the shop, we can collect our flag back at the `achievements` page.
 
 ```
 grey{unl1m1t3d_m0n3y_unl1m1t3d_p0w3r_kl2j1fd}
 ```
+![11](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/29021b30-5d31-4fb3-8af6-6d5318a60985)
 
-![[Pasted image 20240504173609.png]]
 
 Another interesting thing about the number of coins is that if the value is too large, it will simply be replaced with a positive infinity symbol. This would be reflected back in the game's shop as well. Way to be the richest in cat galaxy.
 
