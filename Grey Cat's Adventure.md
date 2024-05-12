@@ -1,3 +1,5 @@
+# Grey Cat's Adventure!!!
+
 These challenges requires players to utilize a wide range of techniques to capture the flags. Firstly, players need to understand the basics of cheat engine and how to modify arbitrary values to bypass certain requirements in the game. Players are also required to think out of the box for some challenges that may seem impossible.
 
 This write-up will be beginner friendly. This is because, it was also my first time using cheat-engine and had to learn everything on the go :).
@@ -173,11 +175,12 @@ Another interesting thing about the number of coins is that if the value is too 
 
 The 3rd achievement points us in the direction of the credits in search for a secret message. As we read through the credits, we can see several unorthodox symbols between the lines.
 
-![[Pasted image 20240504203910.png]]
+![1](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/32a61b2c-37c5-4d1d-a02b-f366725bfe69)
 
-![[Pasted image 20240504203926.png]]
+![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/494eb651-7a7f-4a33-830f-0ee174ebac2d)
 
-![[Pasted image 20240504203941.png]]
+![3](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/3fca4f8f-ca38-4e9b-a2d7-33a2c7eb99b0)
+
 
 As the credits roll, we confirm that only three symbols were used: `-`, `.` and `X`. This looks very similar to morse code. However, morse code does not use `X` but instead a `space` is used. We can substitute all `X` characters with a `space` and decode them accordingly
 
@@ -193,9 +196,11 @@ The resulting plain text when converted:
 GIGACATGIGACHAD
 ```
 
-![[Pasted image 20240504205234.png]]
+![4](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/23eb9f98-92a7-4337-85fc-de04edab8d36)
+
 
 We still need to enter this into the input field at the bottom of the achievements screen to get our flag.
 
-![[Pasted image 20240504205458.png]]
+![5](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/9195faa7-a9a0-4399-adbc-1e159694cc56)
+
 
