@@ -10,6 +10,8 @@ This write-up will be beginner friendly. This is because, it was also my first t
 
 ### Challenge
 
+![Uploading timelock.png…]()
+
 The starting value of the game will be `180000`. With every second the value will decrement by 1. However, players will be quick to realize the counting will pause if the game is out of focus. Furthermore, the game itself warns players that the counter will reset if they left that screen.
 
 ### Solution
