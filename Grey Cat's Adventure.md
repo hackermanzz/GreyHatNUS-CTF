@@ -1,4 +1,4 @@
-![8](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/65dfc3ee-e531-4a0a-ad7a-a5d9a5103758)![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/02b1a312-a10a-41df-8bde-d0414351f39e)These challenges requires players to utilize a wide range of techniques to capture the flags. Firstly, players need to understand the basics of cheat engine and how to modify arbitrary values to bypass certain requirements in the game. Players are also required to think out of the box for some challenges that may seem impossible.
+These challenges requires players to utilize a wide range of techniques to capture the flags. Firstly, players need to understand the basics of cheat engine and how to modify arbitrary values to bypass certain requirements in the game. Players are also required to think out of the box for some challenges that may seem impossible.
 
 This write-up will be beginner friendly. This is because, it was also my first time using cheat-engine and had to learn everything on the go :).
 
