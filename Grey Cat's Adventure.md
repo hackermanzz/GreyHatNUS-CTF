@@ -190,6 +190,8 @@ The resulting cipher text should look something like this:
 --. .. --/. .- -.-. ./- - --. .. --/. .- -.-. ../.. .- -..
 ```
 
+Keep in mind, in most morse code translators, the forward slash `/` is used to denote spacing between new words.
+
 The resulting plain text when converted:
 
 ```
