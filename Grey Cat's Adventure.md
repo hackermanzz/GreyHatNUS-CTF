@@ -32,7 +32,10 @@ If you were to blink you may miss the entire sequence of characters and just be 
 
 If speed is the issue, lets remove it! We can start a screen recording right before clicking on the `vault`. We can slow down the footage once completed to reveal the flag!
 
-![[Untitled video - Made with Clipchamp.mp4]]
+
+https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/5956787e-e390-4338-ac85-fb26d983738c
+
+
 Do keep in mind the last 2 `X` characters are not to be confused with the flag. They are simply just filler characters to tell the players that the sequence has ended.
 
 The assembled string should look something like that:
@@ -49,7 +52,9 @@ grey{th3_numb3r5_m450n_wh4t_d0_th3y_m34n??!}
 
 Hopefully, they found out what the numbers meant...
 
-![[8pq7o3.gif]]
+![8pq7o3](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/66a65686-1a3d-4f23-a494-dc090b8899de)
+
+
 # Achievement 1
 
 This challenge introduces the `flappy cat` game. The achievement's description requires us to get a high score of exactly 1337420, nice. 
