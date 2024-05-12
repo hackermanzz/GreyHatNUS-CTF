@@ -111,37 +111,46 @@ Achievement 2 require us to purchase all items in the shop for the flag to be un
 
 
 However, when browsing the shop for the first time we meet a vagabond-looking cat with a purple hoodie on select various trinkets and potions. These items increase in value exponentially and the last time even has a requirement to purchase all other products before unlocking it.
+
 ![2](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/ba186e2f-f602-4219-9f17-92b41efede8c)
 
 
 We can earn coins through the `flappy cat` minigame. To earn coins we have to navigate our kitty through openings in the pipes, each successful point awards us 10 coins! Personally my high score is `1337420` :).
+
 ![3](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/bf1ba354-717d-47f2-b375-7d40b938df95)
 
 
 Now that we have earned some coins, we are able to afford some of the trinkets in the shop. It would take too much time to manually earn the coins to purchase everything. So lets use cheat engine to change that.
+
 ![4](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/37893b19-445d-4936-91d9-b659dee8e32c)
 
 
 After firing up cheat engine and selecting the game's process to open. We can conduct an initial scan for the current amount of coins that we have: `620`. Setting the value type to `float` and scanning for the exact value of `620`, we are able to discover 2 addresses that contain those values.
+
 ![5](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/67f088dc-6e1d-40be-a1e2-88fcc1a80383)
 
 
 Double clicking on each entry allows us to change their values. As an example lets change the address `1B9E29668C0` value to `10000`. To do this, double click on the value column and enter the desired value into the pop-up input field. Press `ok` to execute the update.
+
 ![6](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/8d77f7bb-0f56-4ac2-9561-523e0f686806)
 
 
 Our coins will not change immediately and will require a revisit. By clicking `back` and re-entering the shop we can see our updated coins value. Now we have 10000 coins! 
 
 However, 10000 is just enough to purchase the almighty powerful fire-cat crystal (yellow orb). Hence, we need more!!!
+
 ![7](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/95c81392-121f-4c40-9d85-b8ae656172e8)
 
 
 Hopping back to Cheat engine, lets add more funds to our coin pouch. We will be using an extremely large number just for good measures in case the last item is exorbitantly expensive.
+
 ![8](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/afff7acb-ec53-4404-9e56-fb691f5bc0bc)
 
 
 Boom! We're rich enough to afford the entire shop. I think vagabond cat would be very happy because of us. 
+
 ![9](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/dd202111-0226-4760-a957-4110ffb4354a)
+
 ![10](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/e4e1e2bb-02d5-48ac-b0fc-c1dbb92acc61)
 
 
@@ -155,9 +164,10 @@ grey{unl1m1t3d_m0n3y_unl1m1t3d_p0w3r_kl2j1fd}
 
 Another interesting thing about the number of coins is that if the value is too large, it will simply be replaced with a positive infinity symbol. This would be reflected back in the game's shop as well. Way to be the richest in cat galaxy.
 
-![[Pasted image 20240504173714.png]]
+![12](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/6c30ff18-21fc-44a3-bf88-0ae31f9f53a6)
 
-![[Pasted image 20240504173727.png]]
+![13](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/8f4d9720-cd70-46c2-8ccf-828266c3e0fe)
+
 
 # Achievement 3
 
