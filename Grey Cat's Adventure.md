@@ -8,7 +8,7 @@ This write-up will be beginner friendly. This is because, it was also my first t
 
 ### Challenge
 
-The starting value of the game will be `10,800,000`. With every second the value will decrement by 1. However, players will be quick to realize the counting will pause if the game is out of focus. Furthermore, the game itself warns players that the counter will reset if they left that screen.
+The starting value of the game will be `180000`. With every second the value will decrement by 1. However, players will be quick to realize the counting will pause if the game is out of focus. Furthermore, the game itself warns players that the counter will reset if they left that screen.
 
 ### Solution
 
@@ -22,18 +22,23 @@ The starting value of the game will be `10,800,000`. With every second the value
 
 If you were to blink you may miss the entire sequence of characters and just be met with 2 `X` characters. 
 
-![[Pasted image 20240504212200.png]]
+![end](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/765ae6d9-a12c-4da2-bc9c-72aa91996985)
+
 
   be quick to notice that if they were to un-focus from the application, it will pause the cycling and freeze in time. Players that are even quicker may discover the first few characters are `E`,`Y`,`{` connoting that the values may eventually construct the flag.
 
-![[Pasted image 20240504210026.png]]
+![Clue](https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/6624934e-8626-4d51-9803-9fdfbf80e469)
+
 
 ### Solution
 
 If speed is the issue, lets remove it! We can start a screen recording right before clicking on the `vault`. We can slow down the footage once completed to reveal the flag!
 
 
-https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/5956787e-e390-4338-ac85-fb26d983738c
+
+https://github.com/hackermanzz/GreyHatNUS-CTF/assets/55987051/1669ac1d-4205-43c8-aea8-0cee9d284a55
+
+
 
 
 Do keep in mind the last 2 `X` characters are not to be confused with the flag. They are simply just filler characters to tell the players that the sequence has ended.
